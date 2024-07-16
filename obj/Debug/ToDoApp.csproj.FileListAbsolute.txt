@@ -1,0 +1,15 @@
+C:\Users\agile\source\repos\ToDoApp\bin\Debug\ToDoApp.exe.config
+C:\Users\agile\source\repos\ToDoApp\bin\Debug\ToDoApp.exe
+C:\Users\agile\source\repos\ToDoApp\bin\Debug\ToDoApp.pdb
+C:\Users\agile\source\repos\ToDoApp\obj\Debug\ToDoApp.csproj.AssemblyReference.cache
+C:\Users\agile\source\repos\ToDoApp\obj\Debug\ToDoApp.Properties.Resources.resources
+C:\Users\agile\source\repos\ToDoApp\obj\Debug\ToDoApp.csproj.GenerateResource.cache
+C:\Users\agile\source\repos\ToDoApp\obj\Debug\ToDoApp.csproj.CoreCompileInputs.cache
+C:\Users\agile\source\repos\ToDoApp\obj\Debug\ToDoApp.exe
+C:\Users\agile\source\repos\ToDoApp\obj\Debug\ToDoApp.pdb
+C:\Users\agile\source\repos\ToDoApp\obj\Debug\ToDoApp.AddTaskScreen.resources
+C:\Users\agile\source\repos\ToDoApp\obj\Debug\ToDoApp.HomeScreen.resources
+C:\Users\agile\source\repos\ToDoApp\obj\Debug\ToDoApp.TaskDetails.resources
+C:\Users\agile\source\repos\ToDoApp\obj\Debug\ToDoApp.EditCompletedTask.resources
+C:\Users\agile\source\repos\ToDoApp\obj\Debug\ToDoApp.EditTask.resources
+C:\Users\agile\source\repos\ToDoApp\obj\Debug\ToDoApp.DBConnect.resources
