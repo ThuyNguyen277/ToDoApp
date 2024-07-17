@@ -1,21 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using ToDoApp;
-using System.Configuration;
 using System.Data.SqlClient;
+using System.Windows.Forms;
+using System.Configuration;
 
 namespace ToDoApp
 {
     public partial class AddTaskScreen : Form
     {
-        private string connecitonString = ConfigurationMannager.ConnectionStrings["ToDoAppConnectionString"].ConnectionString;
+        private string connecitonString = ConfigurationManager.ConnectionStrings["ToDoAppConnectionString"].ConnectionString;
         public AddTaskScreen()
         {
             InitializeComponent();
@@ -68,8 +60,8 @@ namespace ToDoApp
             //入力された情報を取得
             string title = txtTitle.Text;
             string content = txtContent.Text;
-            DateTime adddate = addDate.Value;
-            DateTime deadline = deadLine.Value;
+            DateTime addDate = addDatePicker.Value;
+            DateTime? deadline = deadlinePicker.Value;
             string priority = "";
 
             if (radioButtonHigh.Checked)
@@ -105,6 +97,9 @@ namespace ToDoApp
                     if (rowsAffected > 0)
                     {
                         MessageBox.Show("タスクが追加されました。");
+                        TaskDetails taskDetails = new TaskDetails("",title, content, addDate, (DateTime)deadline, priority);
+                        taskDetails.Show();
+                        this.Hide();
                     }
                     else
                     {

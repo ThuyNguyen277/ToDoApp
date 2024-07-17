@@ -3,51 +3,51 @@
   "WorkspaceRootPath": "C:\\Users\\agile\\source\\repos\\ToDoApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|C:\\Users\\agile\\source\\repos\\ToDoApp\\edittask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|solutionrelative:edittask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|C:\\Users\\agile\\source\\repos\\ToDoApp\\taskdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|solutionrelative:taskdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|c:\\users\\agile\\source\\repos\\todoapp\\taskdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|solutionrelative:taskdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|c:\\users\\agile\\source\\repos\\todoapp\\taskdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|solutionrelative:taskdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|c:\\users\\agile\\source\\repos\\todoapp\\addtaskscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|C:\\Users\\agile\\source\\repos\\ToDoApp\\addtaskscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|solutionrelative:addtaskscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|c:\\users\\agile\\source\\repos\\todoapp\\addtaskscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|C:\\Users\\agile\\source\\repos\\ToDoApp\\addtaskscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|solutionrelative:addtaskscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|c:\\users\\agile\\source\\repos\\todoapp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|C:\\Users\\agile\\source\\repos\\ToDoApp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|c:\\users\\agile\\source\\repos\\todoapp\\edittask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|solutionrelative:edittask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|c:\\users\\agile\\source\\repos\\todoapp\\dbconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|C:\\Users\\agile\\source\\repos\\ToDoApp\\dbconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|solutionrelative:dbconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|c:\\users\\agile\\source\\repos\\todoapp\\dbconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|C:\\Users\\agile\\source\\repos\\ToDoApp\\dbconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|solutionrelative:dbconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|c:\\users\\agile\\source\\repos\\todoapp\\edittask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|C:\\Users\\agile\\source\\repos\\ToDoApp\\edittask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|solutionrelative:edittask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|c:\\users\\agile\\source\\repos\\todoapp\\editcompletedtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|C:\\Users\\agile\\source\\repos\\ToDoApp\\editcompletedtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|solutionrelative:editcompletedtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|c:\\users\\agile\\source\\repos\\todoapp\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|C:\\Users\\agile\\source\\repos\\ToDoApp\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|solutionrelative:homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|c:\\users\\agile\\source\\repos\\todoapp\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|C:\\Users\\agile\\source\\repos\\ToDoApp\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63CF1525-42E0-4168-AF23-0BA963126FC8}|ToDoApp.csproj|solutionrelative:homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -58,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,19 +66,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AddTaskScreen.cs [\u30C7\u30B6\u30A4\u30F3]",
               "DocumentMoniker": "C:\\Users\\agile\\source\\repos\\ToDoApp\\AddTaskScreen.cs",
               "RelativeDocumentMoniker": "AddTaskScreen.cs",
               "ToolTip": "C:\\Users\\agile\\source\\repos\\ToDoApp\\AddTaskScreen.cs [\u30C7\u30B6\u30A4\u30F3]",
               "RelativeToolTip": "AddTaskScreen.cs [\u30C7\u30B6\u30A4\u30F3]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T04:12:53.569Z",
-              "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
+              "WhenOpened": "2024-07-16T04:12:53.569Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "TaskDetails.cs [\u30C7\u30B6\u30A4\u30F3]",
               "DocumentMoniker": "C:\\Users\\agile\\source\\repos\\ToDoApp\\TaskDetails.cs",
               "RelativeDocumentMoniker": "TaskDetails.cs",
@@ -96,14 +95,14 @@
               "RelativeDocumentMoniker": "TaskDetails.cs",
               "ToolTip": "C:\\Users\\agile\\source\\repos\\ToDoApp\\TaskDetails.cs",
               "RelativeToolTip": "TaskDetails.cs",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAMwGkAAAACAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGkAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-16T05:14:24.096Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AddTaskScreen.cs",
               "DocumentMoniker": "C:\\Users\\agile\\source\\repos\\ToDoApp\\AddTaskScreen.cs",
               "RelativeDocumentMoniker": "AddTaskScreen.cs",
@@ -111,12 +110,11 @@
               "RelativeToolTip": "AddTaskScreen.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T04:26:15.489Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-16T04:26:15.489Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\agile\\source\\repos\\ToDoApp\\App.config",
               "RelativeDocumentMoniker": "App.config",
@@ -129,13 +127,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "EditTask.cs",
               "DocumentMoniker": "C:\\Users\\agile\\source\\repos\\ToDoApp\\EditTask.cs",
               "RelativeDocumentMoniker": "EditTask.cs",
               "ToolTip": "C:\\Users\\agile\\source\\repos\\ToDoApp\\EditTask.cs",
               "RelativeToolTip": "EditTask.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGIAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-16T07:05:33.318Z",
               "EditorCaption": ""
@@ -150,8 +148,7 @@
               "RelativeToolTip": "DBConnect.cs",
               "ViewState": "AQIAAB0AAAAAAAAAAAASwDwAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T08:11:54.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-16T08:11:54.557Z"
             },
             {
               "$type": "Document",
@@ -162,8 +159,7 @@
               "ToolTip": "C:\\Users\\agile\\source\\repos\\ToDoApp\\DBConnect.cs [\u30C7\u30B6\u30A4\u30F3]",
               "RelativeToolTip": "DBConnect.cs [\u30C7\u30B6\u30A4\u30F3]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T08:11:52.661Z",
-              "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
+              "WhenOpened": "2024-07-16T08:11:52.661Z"
             },
             {
               "$type": "Document",
@@ -186,8 +182,7 @@
               "ToolTip": "C:\\Users\\agile\\source\\repos\\ToDoApp\\EditCompletedTask.cs [\u30C7\u30B6\u30A4\u30F3]",
               "RelativeToolTip": "EditCompletedTask.cs [\u30C7\u30B6\u30A4\u30F3]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T07:30:11.686Z",
-              "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
+              "WhenOpened": "2024-07-16T07:30:11.686Z"
             },
             {
               "$type": "Document",
@@ -198,8 +193,7 @@
               "ToolTip": "C:\\Users\\agile\\source\\repos\\ToDoApp\\HomeScreen.cs [\u30C7\u30B6\u30A4\u30F3]",
               "RelativeToolTip": "HomeScreen.cs [\u30C7\u30B6\u30A4\u30F3]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T00:55:11.707Z",
-              "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
+              "WhenOpened": "2024-07-16T00:55:11.707Z"
             },
             {
               "$type": "Document",
@@ -211,8 +205,7 @@
               "RelativeToolTip": "HomeScreen.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T02:54:24.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-16T02:54:24.069Z"
             }
           ]
         },

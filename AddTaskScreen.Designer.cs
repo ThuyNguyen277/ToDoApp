@@ -43,8 +43,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.txtContent = new System.Windows.Forms.TextBox();
-            this.addDate = new System.Windows.Forms.DateTimePicker();
-            this.deadLine = new System.Windows.Forms.DateTimePicker();
+            this.addDatePicker = new System.Windows.Forms.DateTimePicker();
+            this.deadlinePicker = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButtonLow = new System.Windows.Forms.RadioButton();
             this.radioButtonMedium = new System.Windows.Forms.RadioButton();
@@ -215,29 +215,29 @@
             this.txtContent.Size = new System.Drawing.Size(267, 120);
             this.txtContent.TabIndex = 11;
             // 
-            // addDate
+            // addDatePicker
             // 
-            this.addDate.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
-            this.addDate.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.addDate.Location = new System.Drawing.Point(121, 396);
-            this.addDate.MaxDate = new System.DateTime(2200, 12, 31, 0, 0, 0, 0);
-            this.addDate.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
-            this.addDate.Name = "addDate";
-            this.addDate.Size = new System.Drawing.Size(267, 22);
-            this.addDate.TabIndex = 12;
+            this.addDatePicker.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
+            this.addDatePicker.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.addDatePicker.Location = new System.Drawing.Point(121, 396);
+            this.addDatePicker.MaxDate = new System.DateTime(2200, 12, 31, 0, 0, 0, 0);
+            this.addDatePicker.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
+            this.addDatePicker.Name = "addDatePicker";
+            this.addDatePicker.Size = new System.Drawing.Size(267, 22);
+            this.addDatePicker.TabIndex = 12;
             // 
-            // deadLine
+            // deadlinePicker
             // 
-            this.deadLine.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
-            this.deadLine.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deadLine.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.deadLine.Location = new System.Drawing.Point(121, 441);
-            this.deadLine.MaxDate = new System.DateTime(2200, 12, 31, 0, 0, 0, 0);
-            this.deadLine.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
-            this.deadLine.Name = "deadLine";
-            this.deadLine.Size = new System.Drawing.Size(267, 22);
-            this.deadLine.TabIndex = 13;
+            this.deadlinePicker.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
+            this.deadlinePicker.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deadlinePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.deadlinePicker.Location = new System.Drawing.Point(121, 441);
+            this.deadlinePicker.MaxDate = new System.DateTime(2200, 12, 31, 0, 0, 0, 0);
+            this.deadlinePicker.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
+            this.deadlinePicker.Name = "deadlinePicker";
+            this.deadlinePicker.Size = new System.Drawing.Size(267, 22);
+            this.deadlinePicker.TabIndex = 13;
             // 
             // groupBox1
             // 
@@ -322,8 +322,8 @@
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.deadLine);
-            this.Controls.Add(this.addDate);
+            this.Controls.Add(this.deadlinePicker);
+            this.Controls.Add(this.addDatePicker);
             this.Controls.Add(this.txtContent);
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.label7);
@@ -367,8 +367,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.TextBox txtContent;
-        private System.Windows.Forms.DateTimePicker addDate;
-        private System.Windows.Forms.DateTimePicker deadLine;
+        private System.Windows.Forms.DateTimePicker addDatePicker;
+        private System.Windows.Forms.DateTimePicker deadlinePicker;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioButtonLow;
         private System.Windows.Forms.RadioButton radioButtonMedium;

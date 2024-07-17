@@ -37,6 +37,9 @@
             this.TodoAppName = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pnlTopSide = new System.Windows.Forms.Panel();
+            this.picMin = new System.Windows.Forms.PictureBox();
+            this.picClose = new System.Windows.Forms.PictureBox();
+            this.picMax = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblContent = new System.Windows.Forms.Label();
             this.lblAddDate = new System.Windows.Forms.Label();
@@ -46,9 +49,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.btnTaskList = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
-            this.picMin = new System.Windows.Forms.PictureBox();
-            this.picClose = new System.Windows.Forms.PictureBox();
-            this.picMax = new System.Windows.Forms.PictureBox();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.lblUpdateDate = new System.Windows.Forms.Label();
             this.pnlTopSide.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
@@ -60,7 +62,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
-            this.label7.Location = new System.Drawing.Point(41, 489);
+            this.label7.Location = new System.Drawing.Point(41, 356);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(66, 19);
             this.label7.TabIndex = 24;
@@ -71,7 +73,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
-            this.label6.Location = new System.Drawing.Point(41, 399);
+            this.label6.Location = new System.Drawing.Point(41, 396);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(66, 19);
             this.label6.TabIndex = 23;
@@ -135,7 +137,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
-            this.label5.Location = new System.Drawing.Point(41, 350);
+            this.label5.Location = new System.Drawing.Point(41, 438);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(66, 19);
             this.label5.TabIndex = 22;
@@ -153,100 +155,6 @@
             this.pnlTopSide.Name = "pnlTopSide";
             this.pnlTopSide.Size = new System.Drawing.Size(464, 45);
             this.pnlTopSide.TabIndex = 17;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(131, 209);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(0, 20);
-            this.lblTitle.TabIndex = 32;
-            // 
-            // lblContent
-            // 
-            this.lblContent.AutoSize = true;
-            this.lblContent.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContent.Location = new System.Drawing.Point(131, 248);
-            this.lblContent.Name = "lblContent";
-            this.lblContent.Size = new System.Drawing.Size(0, 20);
-            this.lblContent.TabIndex = 33;
-            // 
-            // lblAddDate
-            // 
-            this.lblAddDate.AutoSize = true;
-            this.lblAddDate.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddDate.Location = new System.Drawing.Point(134, 349);
-            this.lblAddDate.Name = "lblAddDate";
-            this.lblAddDate.Size = new System.Drawing.Size(0, 20);
-            this.lblAddDate.TabIndex = 34;
-            // 
-            // lblDeadLine
-            // 
-            this.lblDeadLine.AutoSize = true;
-            this.lblDeadLine.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDeadLine.Location = new System.Drawing.Point(134, 398);
-            this.lblDeadLine.Name = "lblDeadLine";
-            this.lblDeadLine.Size = new System.Drawing.Size(0, 20);
-            this.lblDeadLine.TabIndex = 35;
-            // 
-            // lblPriority
-            // 
-            this.lblPriority.AutoSize = true;
-            this.lblPriority.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPriority.Location = new System.Drawing.Point(134, 488);
-            this.lblPriority.Name = "lblPriority";
-            this.lblPriority.Size = new System.Drawing.Size(0, 20);
-            this.lblPriority.TabIndex = 36;
-            // 
-            // lblRemainingDays
-            // 
-            this.lblRemainingDays.AutoSize = true;
-            this.lblRemainingDays.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRemainingDays.Location = new System.Drawing.Point(134, 443);
-            this.lblRemainingDays.Name = "lblRemainingDays";
-            this.lblRemainingDays.Size = new System.Drawing.Size(0, 20);
-            this.lblRemainingDays.TabIndex = 38;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
-            this.label9.Location = new System.Drawing.Point(48, 444);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(59, 19);
-            this.label9.TabIndex = 37;
-            this.label9.Text = "(残り）：";
-            // 
-            // btnTaskList
-            // 
-            this.btnTaskList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
-            this.btnTaskList.FlatAppearance.BorderSize = 0;
-            this.btnTaskList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTaskList.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaskList.ForeColor = System.Drawing.Color.White;
-            this.btnTaskList.Location = new System.Drawing.Point(216, 562);
-            this.btnTaskList.Name = "btnTaskList";
-            this.btnTaskList.Size = new System.Drawing.Size(54, 42);
-            this.btnTaskList.TabIndex = 39;
-            this.btnTaskList.Text = "タスク一覧";
-            this.btnTaskList.UseVisualStyleBackColor = false;
-            this.btnTaskList.Click += new System.EventHandler(this.btnTaskList_Click);
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
-            this.btnEdit.FlatAppearance.BorderSize = 0;
-            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdit.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(304, 562);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(54, 42);
-            this.btnEdit.TabIndex = 40;
-            this.btnEdit.Text = "編集";
-            this.btnEdit.UseVisualStyleBackColor = false;
             // 
             // picMin
             // 
@@ -287,12 +195,133 @@
             this.picMax.TabStop = false;
             this.picMax.Click += new System.EventHandler(this.picMax_Click);
             // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(131, 209);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(0, 20);
+            this.lblTitle.TabIndex = 32;
+            // 
+            // lblContent
+            // 
+            this.lblContent.AutoSize = true;
+            this.lblContent.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContent.Location = new System.Drawing.Point(131, 248);
+            this.lblContent.Name = "lblContent";
+            this.lblContent.Size = new System.Drawing.Size(0, 20);
+            this.lblContent.TabIndex = 33;
+            // 
+            // lblAddDate
+            // 
+            this.lblAddDate.AutoSize = true;
+            this.lblAddDate.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddDate.Location = new System.Drawing.Point(134, 428);
+            this.lblAddDate.Name = "lblAddDate";
+            this.lblAddDate.Size = new System.Drawing.Size(0, 20);
+            this.lblAddDate.TabIndex = 34;
+            // 
+            // lblDeadLine
+            // 
+            this.lblDeadLine.AutoSize = true;
+            this.lblDeadLine.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeadLine.Location = new System.Drawing.Point(134, 395);
+            this.lblDeadLine.Name = "lblDeadLine";
+            this.lblDeadLine.Size = new System.Drawing.Size(0, 20);
+            this.lblDeadLine.TabIndex = 35;
+            // 
+            // lblPriority
+            // 
+            this.lblPriority.AutoSize = true;
+            this.lblPriority.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPriority.Location = new System.Drawing.Point(134, 355);
+            this.lblPriority.Name = "lblPriority";
+            this.lblPriority.Size = new System.Drawing.Size(0, 20);
+            this.lblPriority.TabIndex = 36;
+            // 
+            // lblRemainingDays
+            // 
+            this.lblRemainingDays.AutoSize = true;
+            this.lblRemainingDays.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRemainingDays.Location = new System.Drawing.Point(146, 477);
+            this.lblRemainingDays.Name = "lblRemainingDays";
+            this.lblRemainingDays.Size = new System.Drawing.Size(0, 20);
+            this.lblRemainingDays.TabIndex = 38;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
+            this.label9.Location = new System.Drawing.Point(48, 478);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(59, 19);
+            this.label9.TabIndex = 37;
+            this.label9.Text = "(残り）：";
+            // 
+            // btnTaskList
+            // 
+            this.btnTaskList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
+            this.btnTaskList.FlatAppearance.BorderSize = 0;
+            this.btnTaskList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTaskList.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaskList.ForeColor = System.Drawing.Color.White;
+            this.btnTaskList.Location = new System.Drawing.Point(216, 562);
+            this.btnTaskList.Name = "btnTaskList";
+            this.btnTaskList.Size = new System.Drawing.Size(54, 42);
+            this.btnTaskList.TabIndex = 39;
+            this.btnTaskList.Text = "タスク一覧";
+            this.btnTaskList.UseVisualStyleBackColor = false;
+            this.btnTaskList.Click += new System.EventHandler(this.btnTaskList_Click);
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnEdit.FlatAppearance.BorderSize = 0;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.ForeColor = System.Drawing.Color.White;
+            this.btnEdit.Location = new System.Drawing.Point(276, 562);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(54, 42);
+            this.btnEdit.TabIndex = 40;
+            this.btnEdit.Text = "編集";
+            this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.Silver;
+            this.btnDelete.FlatAppearance.BorderSize = 0;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(336, 562);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(54, 42);
+            this.btnDelete.TabIndex = 41;
+            this.btnDelete.Text = "削除";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // lblUpdateDate
+            // 
+            this.lblUpdateDate.AutoSize = true;
+            this.lblUpdateDate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpdateDate.Location = new System.Drawing.Point(72, 519);
+            this.lblUpdateDate.Name = "lblUpdateDate";
+            this.lblUpdateDate.Size = new System.Drawing.Size(0, 21);
+            this.lblUpdateDate.TabIndex = 42;
+            // 
             // TaskDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(464, 691);
+            this.Controls.Add(this.lblUpdateDate);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnTaskList);
             this.Controls.Add(this.lblRemainingDays);
@@ -313,6 +342,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TaskDetails";
             this.Text = "TaskDetails";
+            this.Load += new System.EventHandler(this.TaskDetails_Load);
             this.pnlTopSide.ResumeLayout(false);
             this.pnlTopSide.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMin)).EndInit();
@@ -345,5 +375,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnTaskList;
         private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Label lblUpdateDate;
     }
 }

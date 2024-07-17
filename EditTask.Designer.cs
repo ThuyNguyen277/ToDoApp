@@ -35,7 +35,7 @@
             this.radioButtonHigh = new System.Windows.Forms.RadioButton();
             this.btnReturn = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.deadLine = new System.Windows.Forms.DateTimePicker();
+            this.deadline = new System.Windows.Forms.DateTimePicker();
             this.addDate = new System.Windows.Forms.DateTimePicker();
             this.txtContent = new System.Windows.Forms.TextBox();
             this.txtTitle = new System.Windows.Forms.TextBox();
@@ -136,17 +136,17 @@
             this.groupBox1.TabIndex = 29;
             this.groupBox1.TabStop = false;
             // 
-            // deadLine
+            // deadline
             // 
-            this.deadLine.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
-            this.deadLine.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deadLine.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.deadLine.Location = new System.Drawing.Point(123, 428);
-            this.deadLine.MaxDate = new System.DateTime(2200, 12, 31, 0, 0, 0, 0);
-            this.deadLine.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
-            this.deadLine.Name = "deadLine";
-            this.deadLine.Size = new System.Drawing.Size(267, 22);
-            this.deadLine.TabIndex = 28;
+            this.deadline.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
+            this.deadline.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deadline.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.deadline.Location = new System.Drawing.Point(123, 428);
+            this.deadline.MaxDate = new System.DateTime(2200, 12, 31, 0, 0, 0, 0);
+            this.deadline.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
+            this.deadline.Name = "deadline";
+            this.deadline.Size = new System.Drawing.Size(267, 22);
+            this.deadline.TabIndex = 28;
             // 
             // addDate
             // 
@@ -349,7 +349,7 @@
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.deadLine);
+            this.Controls.Add(this.deadline);
             this.Controls.Add(this.addDate);
             this.Controls.Add(this.txtContent);
             this.Controls.Add(this.txtTitle);
@@ -386,7 +386,7 @@
         private System.Windows.Forms.RadioButton radioButtonHigh;
         private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DateTimePicker deadLine;
+        private System.Windows.Forms.DateTimePicker deadline;
         private System.Windows.Forms.DateTimePicker addDate;
         private System.Windows.Forms.TextBox txtContent;
         private System.Windows.Forms.TextBox txtTitle;

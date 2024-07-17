@@ -12,4 +12,3 @@ C:\Users\agile\source\repos\ToDoApp\obj\Debug\ToDoApp.HomeScreen.resources
 C:\Users\agile\source\repos\ToDoApp\obj\Debug\ToDoApp.TaskDetails.resources
 C:\Users\agile\source\repos\ToDoApp\obj\Debug\ToDoApp.EditCompletedTask.resources
 C:\Users\agile\source\repos\ToDoApp\obj\Debug\ToDoApp.EditTask.resources
-C:\Users\agile\source\repos\ToDoApp\obj\Debug\ToDoApp.DBConnect.resources

@@ -1,52 +1,69 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ToDoApp
 {
+
+    // タスクの詳細情報を格納するカスタムクラス
+
+    
     public partial class TaskDetails : Form
     {
-
+        private string taskID;
         private string taskTitle;
         private string taskContent;
         private DateTime addDate;
         private DateTime deadline;
         private string priority;
 
-        public TaskDetails(string title, string content, DateTime adddate, DateTime deadline, string priority)
+        private string connectionString = ConfigurationManager.ConnectionStrings["ToDoAppConnectionString"].ConnectionString;
+
+
+        public TaskDetails(string taskId, string title, string content, DateTime adddate, DateTime deadline, string priority, DateTime? updateDate = null)
         {
             InitializeComponent();
 
+            this.taskID = taskId;
             this.taskTitle = title;
             this.taskContent = content;
             this.addDate = adddate;
             this.deadline = deadline;
             this.priority = priority;
 
+            DisplayTaskDetails(updateDate);
+
+
             
+        }
+
+        private void DisplayTaskDetails(DateTime? updateDate)
+        {
             //ラベルやテキストボックスに情報を表示する
             lblTitle.Text = taskTitle;
             //lblContent.Text = content;
-            lblAddDate.Text = adddate.ToShortDateString();
+            lblAddDate.Text = addDate.ToShortDateString();
             lblDeadLine.Text = deadline.ToShortDateString();
             lblPriority.Text = priority;
 
             //残り日数を計算する
             TimeSpan remainingsTime = deadline - DateTime.Today;
-            lblRemainingDays.Text = remainingsTime.Days.ToString();
+            lblRemainingDays.Text = remainingsTime.Days.ToString() + " 日";
 
             //lblContentの表示範囲の調整
             lblContent.AutoSize = false;
             lblContent.Size = new Size(Size.Width, Size.Height);
             lblContent.Text = taskContent;
-            
-            
+
+            if (updateDate.HasValue)
+            {
+                lblUpdateDate.Text = "更新日：" + updateDate.Value.ToShortDateString();
+            }
+            else
+            { lblUpdateDate.Text = ""; }
         }
 
         /// <summary>
@@ -97,12 +114,59 @@ namespace ToDoApp
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            EditTask editTaskForm = new EditTask(taskTitle, taskContent, addDate, deadline, priority);
+            EditTask editTaskForm = new EditTask(taskID);
             editTaskForm.Show();
             this.Close();
 
         }
 
-  
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("このタスクを削除してもよろしいですか？", "確認", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                DeleteTask();
+            }
+        }
+
+        private void DeleteTask()
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "DELETE FROM Tasks WHERE Title = @Title AND AddDate = @AddDate";
+
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Title", taskTitle);
+                command.Parameters.AddWithValue("@AddDate", addDate);
+
+                try
+                {
+                    connection.Open();
+                    int rowsAffected = command.ExecuteNonQuery();
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("タスクが削除されました。");
+                        HomeScreen homeScreen = new HomeScreen();
+                        homeScreen.Show();
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("タスクの削除に失敗しました。");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("データベースエラー: " + ex.Message);
+                }
+
+            }
+        }
+
+        private void TaskDetails_Load(object sender, EventArgs e)
+        {
+
+            DisplayTaskDetails(null);
+        }
     }
 }
