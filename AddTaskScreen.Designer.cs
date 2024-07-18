@@ -38,12 +38,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.txtContent = new System.Windows.Forms.TextBox();
-            this.addDatePicker = new System.Windows.Forms.DateTimePicker();
             this.deadlinePicker = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButtonLow = new System.Windows.Forms.RadioButton();
@@ -165,17 +163,6 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "内容：";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
-            this.label5.Location = new System.Drawing.Point(45, 394);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 19);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "追加日：";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -214,18 +201,6 @@
             this.txtContent.Name = "txtContent";
             this.txtContent.Size = new System.Drawing.Size(267, 120);
             this.txtContent.TabIndex = 11;
-            // 
-            // addDatePicker
-            // 
-            this.addDatePicker.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
-            this.addDatePicker.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.addDatePicker.Location = new System.Drawing.Point(121, 396);
-            this.addDatePicker.MaxDate = new System.DateTime(2200, 12, 31, 0, 0, 0, 0);
-            this.addDatePicker.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
-            this.addDatePicker.Name = "addDatePicker";
-            this.addDatePicker.Size = new System.Drawing.Size(267, 22);
-            this.addDatePicker.TabIndex = 12;
             // 
             // deadlinePicker
             // 
@@ -323,12 +298,10 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.deadlinePicker);
-            this.Controls.Add(this.addDatePicker);
             this.Controls.Add(this.txtContent);
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -362,12 +335,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.TextBox txtContent;
-        private System.Windows.Forms.DateTimePicker addDatePicker;
         private System.Windows.Forms.DateTimePicker deadlinePicker;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioButtonLow;

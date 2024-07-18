@@ -1,24 +1,23 @@
 ﻿
 using System;
-using System.Windows.Forms;
 using System.Configuration;
-using System.Data;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace ToDoApp
 {
-    
+
 
     public partial class EditTask : Form
     {
         private string connectionString = ConfigurationManager.ConnectionStrings["ToDoAppConnectionString"].ConnectionString;
         private string taskId;
+        private DateTime addDate;
 
         
         public EditTask(string taskId)
         {
             InitializeComponent();
-
             this.taskId = taskId;
             LoadTaskDetails();
         }
@@ -76,8 +75,8 @@ namespace ToDoApp
                 {
                     txtTitle.Text = reader["Title"].ToString();
                     txtContent.Text = reader["Content"].ToString();
-                    addDate.Value = (DateTime)reader["AddDate"];
-                    deadline.Value = (DateTime)reader["Deadline"];
+                    addDate = (DateTime)reader["AddDate"];
+                    deadlinePicker.Value = (DateTime)reader["Deadline"];
                     string priority = reader["Priority"].ToString();
 
                     if (priority == "高")
@@ -99,45 +98,30 @@ namespace ToDoApp
         private void btnReturn_Click(object sender, EventArgs e)
         {
 
-            TaskDetails taskDetailsForm = new TaskDetails(taskId, txtTitle.Text, txtContent.Text, addDate.Value, deadline.Value, GetPriority());
-            taskDetailsForm.Show();
-            this.Close();
+            HomeScreen homeScreen = new HomeScreen();
+            homeScreen.Show();
+            this.Hide();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             string title = txtTitle.Text;
             string content = txtContent.Text;
-            DateTime addDate = this.addDate.Value;
-            DateTime deadline = this.deadline.Value;
-            string priority = "";
+            DateTime deadline = deadlinePicker.Value;
+            string priority = GetPriority();
             DateTime updateDate = DateTime.Now;
-
-            if (radioButtonHigh.Checked)
-            {
-                priority = radioButtonHigh.Text;
-            }
-            else if (radioButtonMedium.Checked)
-            {
-                priority = radioButtonMedium.Text;
-            }
-            else if (radioButtonLow.Checked)
-            {
-                priority = radioButtonLow.Text;
-            }
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string query = @"
                     UPDATE Tasks
-                    SET Title = @Title, Content = @Content, AddDate = @AddDate, Deadline = @Deadline, Priority = @Priority, UpdateDate = @UpdateDate
+                    SET Title = @Title, Content = @Content, Deadline = @Deadline, Priority = @Priority, UpdateDate = @UpdateDate
                     WHERE taskId = @taskId;";
 
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@taskId", taskId);
                 command.Parameters.AddWithValue("@Title", title);
                 command.Parameters.AddWithValue("@Content", content);
-                command.Parameters.AddWithValue("@AddDate", addDate);
                 command.Parameters.AddWithValue("@Deadline", deadline);
                 command.Parameters.AddWithValue("@Priority", priority);
                 command.Parameters.AddWithValue("@UpdateDate", updateDate);

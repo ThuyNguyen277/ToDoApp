@@ -44,6 +44,8 @@
             this.btnPrevious = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.lblPageInfo = new System.Windows.Forms.Label();
+            this.listViewCompleted = new System.Windows.Forms.ListView();
+            this.label2 = new System.Windows.Forms.Label();
             this.pnlTopSide.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
@@ -120,7 +122,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
-            this.label1.Location = new System.Drawing.Point(153, 139);
+            this.label1.Location = new System.Drawing.Point(152, 63);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(159, 38);
             this.label1.TabIndex = 1;
@@ -140,7 +142,7 @@
             // 
             this.picAddTask.BackgroundImage = global::ToDoApp.Properties.Resources.Add;
             this.picAddTask.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picAddTask.Location = new System.Drawing.Point(404, 534);
+            this.picAddTask.Location = new System.Drawing.Point(410, 95);
             this.picAddTask.Name = "picAddTask";
             this.picAddTask.Size = new System.Drawing.Size(30, 30);
             this.picAddTask.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -154,13 +156,12 @@
             this.listViewTasks.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listViewTasks.FullRowSelect = true;
             this.listViewTasks.HideSelection = false;
-            this.listViewTasks.Location = new System.Drawing.Point(12, 216);
+            this.listViewTasks.Location = new System.Drawing.Point(11, 140);
             this.listViewTasks.Name = "listViewTasks";
             this.listViewTasks.Size = new System.Drawing.Size(440, 250);
             this.listViewTasks.TabIndex = 6;
             this.listViewTasks.UseCompatibleStateImageBehavior = false;
             this.listViewTasks.View = System.Windows.Forms.View.Details;
-            this.listViewTasks.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.listViewTasks_ItemCheck);
             this.listViewTasks.MouseUp += new System.Windows.Forms.MouseEventHandler(this.listViewTasks_MouseUp);
             // 
             // btnPrevious
@@ -168,7 +169,7 @@
             this.btnPrevious.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
             this.btnPrevious.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrevious.ForeColor = System.Drawing.Color.White;
-            this.btnPrevious.Location = new System.Drawing.Point(30, 472);
+            this.btnPrevious.Location = new System.Drawing.Point(29, 396);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(50, 30);
             this.btnPrevious.TabIndex = 7;
@@ -181,7 +182,7 @@
             this.btnNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
             this.btnNext.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.ForeColor = System.Drawing.Color.White;
-            this.btnNext.Location = new System.Drawing.Point(366, 472);
+            this.btnNext.Location = new System.Drawing.Point(365, 396);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(50, 30);
             this.btnNext.TabIndex = 8;
@@ -193,17 +194,41 @@
             // 
             this.lblPageInfo.AutoSize = true;
             this.lblPageInfo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPageInfo.Location = new System.Drawing.Point(172, 485);
+            this.lblPageInfo.Location = new System.Drawing.Point(171, 404);
             this.lblPageInfo.Name = "lblPageInfo";
             this.lblPageInfo.Size = new System.Drawing.Size(0, 17);
             this.lblPageInfo.TabIndex = 3;
+            // 
+            // listViewCompleted
+            // 
+            this.listViewCompleted.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listViewCompleted.HideSelection = false;
+            this.listViewCompleted.Location = new System.Drawing.Point(10, 511);
+            this.listViewCompleted.Name = "listViewCompleted";
+            this.listViewCompleted.Size = new System.Drawing.Size(441, 180);
+            this.listViewCompleted.TabIndex = 9;
+            this.listViewCompleted.UseCompatibleStateImageBehavior = false;
+            this.listViewCompleted.MouseUp += new System.Windows.Forms.MouseEventHandler(this.listViewCompleted_MouseUp);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
+            this.label2.Location = new System.Drawing.Point(90, 449);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(279, 38);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "完了したタスク一覧";
             // 
             // HomeScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(464, 691);
+            this.ClientSize = new System.Drawing.Size(464, 768);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.listViewCompleted);
             this.Controls.Add(this.lblPageInfo);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrevious);
@@ -240,6 +265,8 @@
         private System.Windows.Forms.Button btnPrevious;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Label lblPageInfo;
+        private System.Windows.Forms.ListView listViewCompleted;
+        private System.Windows.Forms.Label label2;
     }
 }
 

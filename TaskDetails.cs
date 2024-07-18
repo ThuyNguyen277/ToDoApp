@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ToDoApp
-{
-
-    // タスクの詳細情報を格納するカスタムクラス
-
-    
+{  
     public partial class TaskDetails : Form
     {
         private string taskID;
@@ -45,9 +41,10 @@ namespace ToDoApp
             //ラベルやテキストボックスに情報を表示する
             lblTitle.Text = taskTitle;
             //lblContent.Text = content;
-            lblAddDate.Text = addDate.ToShortDateString();
+            lblAddDate.Text = addDate.ToString("yyyy/MM/dd");
             lblDeadLine.Text = deadline.ToShortDateString();
             lblPriority.Text = priority;
+            lblDateUpdate.Text = updateDate.HasValue ? updateDate.Value.ToString("yyyy/MM/dd") : "なし";
 
             //残り日数を計算する
             TimeSpan remainingsTime = deadline - DateTime.Today;
@@ -60,10 +57,10 @@ namespace ToDoApp
 
             if (updateDate.HasValue)
             {
-                lblUpdateDate.Text = "更新日：" + updateDate.Value.ToShortDateString();
+                lblDateUpdate.Text = updateDate.Value.ToShortDateString();
             }
             else
-            { lblUpdateDate.Text = ""; }
+            { lblDateUpdate.Text = ""; }
         }
 
         /// <summary>
@@ -115,7 +112,7 @@ namespace ToDoApp
         private void btnEdit_Click(object sender, EventArgs e)
         {
             EditTask editTaskForm = new EditTask(taskID);
-            editTaskForm.Show();
+            editTaskForm.ShowDialog();
             this.Close();
 
         }

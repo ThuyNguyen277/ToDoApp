@@ -60,7 +60,7 @@ namespace ToDoApp
             //入力された情報を取得
             string title = txtTitle.Text;
             string content = txtContent.Text;
-            DateTime addDate = addDatePicker.Value;
+            DateTime addDate = DateTime.Now;
             DateTime? deadline = deadlinePicker.Value;
             string priority = "";
 
@@ -97,8 +97,8 @@ namespace ToDoApp
                     if (rowsAffected > 0)
                     {
                         MessageBox.Show("タスクが追加されました。");
-                        TaskDetails taskDetails = new TaskDetails("",title, content, addDate, (DateTime)deadline, priority);
-                        taskDetails.Show();
+                        TaskDetails taskDetails = new TaskDetails("",title, content, addDate, deadline ?? DateTime.MinValue, priority);
+                        taskDetails.ShowDialog();
                         this.Hide();
                     }
                     else
